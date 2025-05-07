@@ -43,3 +43,11 @@ function time_function(){
     }
     document.getElementById("time_of_day").innerHTML = Reply;
     }
+
+function getSum(){
+    let sum = a + b;
+    console.log("Before error", sum);
+    sum += c;
+    console.log("After error", sum);
+    document.getElementById("getsum").innerHTML = "Check the logs";
+}
