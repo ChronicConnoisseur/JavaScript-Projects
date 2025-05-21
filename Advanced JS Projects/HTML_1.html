@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="JS/JavaScript_1.js" defer></script>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="500" height="250" style="border: 5px solid black;"></canvas>
+    <h2>What is your favorite food from the list below?</h2>
+    <ul>
+        <li>Bacon</li>
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Salad</li>
+        <li>Chocolate</li>
+    </ul>
+    <h3>Enter your choice in the box below</h3>
+
+    <input class="food" type="text">
+    <button onclick="foodFunction()">Submit</button>
+    <p id="output"></p>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        // Create gradient
+        var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10, 10, 500, 250);
+    </script>
+</body>
+
+</html>

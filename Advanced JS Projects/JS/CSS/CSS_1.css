@@ -1,0 +1,25 @@
+input{
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    border-radius: 10px;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+input[type="submit"]:hover{
+    color: white;
+    background-color: darkgray;
+    transition: 0.3s ease;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+input[type="text"]{
+    background-color: lightgray;
+}
